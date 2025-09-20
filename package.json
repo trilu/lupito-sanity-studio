@@ -13,9 +13,11 @@
     "dev": "sanity dev",
     "build": "sanity build",
     "deploy": "sanity deploy",
-    "start": "sanity start"
+    "start": "sanity start",
+    "test:secrets": "tsx scripts/test-secrets.ts"
   },
   "dependencies": {
+    "@google-cloud/secret-manager": "^6.1.0",
     "@sanity/assist": "^5.0.0",
     "@sanity/vision": "^4.9.0",
     "@types/react": "^19.1.13",
@@ -27,6 +29,7 @@
   },
   "devDependencies": {
     "@types/node": "^22.13.5",
+    "tsx": "^4.20.5",
     "typescript": "^5.7.2"
   }
 }
